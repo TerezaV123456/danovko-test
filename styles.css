@@ -32,7 +32,7 @@ nav {
     height: auto;
     display: flex;
     justify-content: flex-end;
-    margin-right: 2vmax;
+    margin-right: 4vmax;
     gap: 5vmax;
     align-items: center;
     font-weight: bold;
@@ -45,8 +45,8 @@ nav {
     justify-content: center;
     background: #ffffff;
     color:#0A4452;
-    width: 80px;
-    height: 30px;
+    width: 70px;
+    height: 20px;
     border-radius: 25px;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -98,7 +98,7 @@ nav a:hover {
 }
 
 #logo-nav {
-    background-color: #0A4452;
+    background-color: none;
 }
 
 .fa-solid {
@@ -136,4 +136,68 @@ nav a:hover {
 
 .dropdown-menu a:hover {
     background-color: #f1f1f1; 
+}
+
+.main-section {
+    display: flex; 
+    width: 100%; 
+    min-height: 70vh; 
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    width: 50%; 
+    padding: 0; 
+    background-image: url('/images/Vector 1.png'); 
+    background-size: 100% 100%; 
+    background-position: bottom; 
+    background-repeat: no-repeat; 
+}
+
+.main-text {
+    position: relative; 
+    z-index: 1; 
+    text-align: left; 
+    padding: 30px; 
+}
+
+.main-text h3 {
+    margin-bottom: 1vmax;
+    font-size: 30px;
+}
+
+.main-text i {
+    margin-right: 0.3vmax;
+}
+
+.main-text p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0.7vmax;
+}
+
+.main-right {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 50%; 
+    min-height: 50vh; 
+    background-color: #0A4452; 
+}
+
+.main-text button {
+    width: 7vmax;
+    height: 3vmax;
+    border-radius: 25px;
+    background-color: #0A4452;
+    color: white;
+}
+
+#button-main {
+    color: white;
+    text-decoration: none;
 }
