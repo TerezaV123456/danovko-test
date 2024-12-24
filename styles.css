@@ -4,6 +4,11 @@
     font-family: "Roboto Condensed", serif;
 }
 
+
+
+
+/*Nav bar*/
+
 nav {
     background-color: #0A4452;
     color: #ffffff;
@@ -64,6 +69,7 @@ nav a {
     text-decoration: none;
     padding: 10px 20px; 
     border-radius: 25px; 
+    font-size: 20px;
     transition: background-color 0.3s, color 0.3s; 
 }
 
@@ -108,6 +114,7 @@ nav a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
+    font-size: 20px;
 }
 
 .dropdown-menu {
@@ -117,6 +124,7 @@ nav a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 10px; 
     z-index: 1; 
+    font-size: 20px;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -137,6 +145,10 @@ nav a:hover {
 .dropdown-menu a:hover {
     background-color: #f1f1f1; 
 }
+
+
+
+/*Main*/
 
 .main-section {
     display: flex; 
@@ -165,9 +177,11 @@ nav a:hover {
     padding: 30px; 
 }
 
-.main-text h3 {
+.main-text h4 {
     margin-bottom: 1vmax;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #0A4452;
 }
 
 .main-text i {
@@ -178,6 +192,7 @@ nav a:hover {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 0.7vmax;
+    color: #0A4452;
 }
 
 .main-right {
@@ -190,14 +205,170 @@ nav a:hover {
 }
 
 .main-text button {
-    width: 7vmax;
+    width: 6vmax;
     height: 3vmax;
     border-radius: 25px;
     background-color: #0A4452;
     color: white;
+    font-size: 20px;
+    margin-top: 1.5vmax;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-text button:hover {
+    color: #ffffff;
+    background-color: #072931;
 }
 
 #button-main {
     color: white;
     text-decoration: none;
 }
+
+
+
+
+
+/*JSEM*/
+
+.jsem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 4vmax 0vmax 5vmax 0vmax;
+}
+
+.jsem h4 {
+    font-size: 50px;
+    color: #0A4452;
+    text-align: center;
+    margin-bottom: 2vmax;
+}
+
+.jsem-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 10vmax;
+    justify-content: center;
+}
+
+.jsem-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #0A4452;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px; 
+    border-radius: 25px;
+    width: 200px; 
+    height: 100px; 
+    box-shadow: 8px 6px 5px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s;
+}
+
+.jsem-box i {
+    display: flex;
+    align-items: center;
+    font-size: 75px; 
+    margin-bottom: 1vmax; 
+    margin-top: 1.5vmax;
+}
+
+.jsem-boxes a {
+    text-decoration: none;
+}
+
+.jsem-box:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+
+/*Services*/
+
+.services {
+    width: 100%;
+    height: 60vmax;
+    background-color: #0A4452;
+}
+
+#services-title {
+    padding: 2vmax;
+    margin-bottom: 2vmax;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.services-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9vmax;
+    justify-content: center;
+    margin-left: 2vmax;
+    margin-right: 2vmax;
+}
+
+.services-box {
+    padding: 1vmax;
+    width: 455px; 
+    height: 279px; 
+    border-radius: 25px;
+    background-color: #ffffff;
+    flex: 0 25%;
+    transition: transform 0.2s;
+}
+
+.services-box h4 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 3vmax;
+    color: #0A4452;
+}
+
+.services-box i {
+    font-size: 70px;
+    margin-right: 0.5vmax;
+}
+
+.services-box p {
+    display: flex;
+    color: #0A4452;
+    font-size: 20px;
+}
+
+.services-box:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+
+/*CTI section*/
+
+.cti {
+    
+}
+
+.cti img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 20vmax;
+    z-index: -1;
+}
+
+.cti button {
+    position: absolute;
+    z-index: 1;
+}
+
