@@ -431,3 +431,35 @@ nav a:hover {
 
 /*Footer*/
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0A4452;
+}
+
+.footer-left {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 2vmax
+}
+
+footer img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2vmax;
+}
+
+.footer-right {
+    padding: 30px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer button {
+
+}
