@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", serif;
+}
+
+nav {
+    background-color: #0A4452;
+    color: #ffffff;
+    height: 5vmax;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2vmax;
+}
+
+.left-nav img {
+    width: 80%;
+    height: auto;
+}
+
+.right-nav {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vmax;
+    gap: 5vmax;
+    align-items: center;
+    font-weight: bold;
+}
+
+#poptavka {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #ffffff;
+    color:#0A4452;
+    width: 80px;
+    height: 30px;
+    border-radius: 25px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#poptavka:hover {
+    background-color: #cccccc;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+nav a:hover {
+    background-color: #ffffff; 
+    color: #0A4452; 
+}
+
+#osvc {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#osvc:hover {
+    border-radius: 10px 10px 0 0; 
+}
+
+#neziskovka {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#neziskovka:hover {
+    border-radius: 0;
+}
+
+#firma {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#firma:hover {
+    border-radius: 0 0 10px 10px; 
+}
+
+#logo-nav {
+    background-color: #0A4452;
+}
+
+.fa-solid {
+    margin-left: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    background-color: white; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    z-index: 1; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+.dropdown-menu li {
+    list-style: none; 
+}
+
+.dropdown-menu a {
+    display: block; 
+    padding: 8px 16px; 
+    text-decoration: none; 
+    color: black; 
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1; 
+}
