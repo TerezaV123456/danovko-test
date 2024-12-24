@@ -356,19 +356,36 @@ nav a:hover {
 /*CTI section*/
 
 .cti {
-    
+    position: relative; 
+    width: 100%; 
 }
 
 .cti img {
-    position: relative;
     object-fit: cover;
-    width: 100%;
-    height: 20vmax;
-    z-index: -1;
+    width: 100%; 
+    height: 15vmax;
+    filter: contrast(60%);
 }
 
 .cti button {
-    position: absolute;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     z-index: 1;
+    background-color: #0A4452;
+    width: 200px;
+    height: 78px;
+    border-radius: 25px;
+    font-size: 24px;
 }
+
+.cti button:hover {
+    background-color: #072931;
+}
+
+
+
+
+/*Video section*/
 
