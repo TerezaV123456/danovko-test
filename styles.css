@@ -4,7 +4,12 @@
     font-family: "Roboto Condensed", serif;
 }
 
-
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
 
 /*Nav bar*/
@@ -388,6 +393,7 @@ nav a:hover {
     height: 78px;
     border-radius: 25px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .cti button:hover {
