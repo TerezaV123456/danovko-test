@@ -4,8 +4,12 @@
     font-family: "Roboto Condensed", serif;
 }
 
-
-
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
 /*Nav bar*/
 
@@ -153,4 +157,83 @@ nav a:hover {
 
 .dropdown-menu a:hover {
     background-color: #f1f1f1; 
+}
+
+/* Form section */
+
+.form-section {
+    margin: 1vmax;
+}
+
+.form-section h1 {
+    color: #0A4452;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2vmax;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: row;
+    gap: 6vmax;
+    margin-bottom: 1.5vmax;
+}
+
+.first-row label {
+    color: #0A4452;
+    font-size: 20px;
+}
+
+.first-row input {
+    width: 15vmax;
+    height: 2vmax;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+    gap: 6vmax;
+    margin-bottom: 1.5vmax;
+}
+
+.second-row label {
+    color: #0A4452;
+    font-size: 20px;
+}
+
+.second-row input {
+    width: 15vmax;
+    height: 2vmax;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+.second-row select {
+    width: 16vmax;
+    height: 3vmax;
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: #ebebeb;
+    border: #000000;
+}
+
+.third-row label {
+    text-align: left;
+}
+
+.third-row input {
+    width: 37.5vmax;
+    height: 8vmax;
+    border-radius: 5px;
+    background-color: #ebebeb;
 }

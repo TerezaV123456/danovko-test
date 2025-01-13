@@ -33,5 +33,50 @@
                 <a id="poptavka" href="/questions/questions.html">Poptávka</a>
             </div>
         </nav>
+
+        <!-- Form-section -->
+         <section class="form-section">
+            <h1>Potřebujete poradit? Napište nám.</h1>
+            <div class="form">
+
+                <div class="first-row">
+                    <div class="first-info">
+                        <label for="name">Jméno a příjmení<span style="color: #ff0000;">*</span></label><br />
+                        <input type="text" id="name" name="name" placeholder="Petr Novák" required><br />
+                    </div>
+
+                    <div class="second-info">
+                        <label for="email">E-mail<span style="color: #ff0000;">*</span></label><br />
+                        <input type="email" id="email" name="email" placeholder="vasemail@poskytovatel.cz" required>
+                    </div>
+                </div>
+
+                <div class="second-row">
+                    <div class="third-info">
+                        <label for="phone">Telefonní číslo<span style="color: #ff0000;">*</span></label><br />
+                        <input type="tel" id="phone" name="phone" maxlength="9" placeholder="123 456 789"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br />
+                    </div>
+
+                    <div class="fourth-info">
+                        <label for="services">O které služby máte zájem?<span style="color: #ff0000;">*</span></label><br />
+                        <select title="moznosti" name="services" required>
+                            <option value="" selected="selected" hidden="hidden">Vyberte zde</option>
+                            <option value="Účetnictví">Účetnictví</option>
+                            <option value="Daňové přiznání">Daňové přiznání</option>
+                            <option value="Mzdové účetnictví a personalistika">Mzdové účetnictví a personalistika</option>
+                            <option value="Daně">Daně</option>
+                            <option value="Konzultace online / osobně">Konzultace online / osobně</option>
+                            <option value="Jiné">Jiné</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="third-row">
+                    <label for="what">S čím Vám můžeme pomoci?</label><br />
+                    <input title="message" type="text" id="message" name="message">
+                </div>
+            </div>
+         </section>
     </body>
 </html>
