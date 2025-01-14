@@ -25,7 +25,7 @@ nav {
     overflow: visible;
 }
 
-.navigation {
+#navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -510,3 +510,74 @@ footer button {
     text-decoration: none;
     color: #0A4452;
 }
+
+
+
+
+@media screen and (max-width: 480px) {
+    .main-section img {
+        display: none;
+    }
+
+    .main-left {
+        width: 100%;
+    }
+
+    .main-right {
+        display: none;       
+    }
+
+    .jsem-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vmax;
+    }
+
+    .jsem-box {
+        font-size: 30px;
+    }
+
+    .jsem-boxes i {
+        font-size: 40px;
+    }
+
+    .services {
+        height: 100vmax;
+    }
+
+    .services-boxes {
+        display: flex;
+        flex-direction: row;
+        gap: 4vmax;
+        margin-bottom: 1vmax;
+    }
+
+    .services-box {
+        width: 100%;
+        height: 200px;
+        padding: 45px;
+    }
+
+    .services-box h4 {
+        font-size: 12px;
+    }
+
+    .services-box i {
+        font-size: 25px;
+    }
+
+    .services-box p {
+        font-size: 15px;
+    }
+
+    .video video {
+        width: 70%;
+    }
+}
+
+
+
+
+

@@ -37,8 +37,8 @@
         <!-- Form-section -->
          <section class="form-section">
             <h1>Potřebujete poradit? Napište nám.</h1>
-            <div class="form">
 
+            <form>
                 <div class="first-row">
                     <div class="first-info">
                         <label for="name">Jméno a příjmení<span style="color: #ff0000;">*</span></label><br />
@@ -55,7 +55,7 @@
                     <div class="third-info">
                         <label for="phone">Telefonní číslo<span style="color: #ff0000;">*</span></label><br />
                         <input type="tel" id="phone" name="phone" maxlength="9" placeholder="123 456 789"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br />
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br />
                     </div>
 
                     <div class="fourth-info">
@@ -76,7 +76,25 @@
                     <label for="what">S čím Vám můžeme pomoci?</label><br />
                     <input title="message" type="text" id="message" name="message">
                 </div>
-            </div>
+
+                <div class="fourth-row">
+                    <input type="submit" value="Odeslat">
+                </div>
+            </form>
          </section>
+
+         <!--Footer-->
+        <footer>
+            <div class="footer-left">
+                <img src="/images/inverzni-logo.png" alt="footer logo">
+                <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i><a href="tel:+420 734 161 711">+420 734 161 711</a></p>
+                <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i><a href="mailto:info@danoveucetniporadenstvi.cz">info@danoveucetniporadenstvi.cz</a></p>
+            </div>
+            <div class="footer-right">
+                <p>Pomáháme již více než 250+ klientům. Jste majitel nemovitosti, živnostník, startup, e-commerce projekt vstupující na zahraniční trh či nezisková organizace? 
+                    Vyberte si z našeho portolia služeb či nechte vše komplexně na nás. Jsme tu právě pro Vás.</p>
+                <button type="button"><a id="button-footer" href="/questions/questions.html">Chci poradit!</a></button>
+            </div>
+        </footer>
     </body>
 </html>
