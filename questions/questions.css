@@ -4,6 +4,7 @@
     font-family: "Roboto Condensed", serif;
 }
 
+
 html, body {
     margin: 0;
     padding: 0;
@@ -12,6 +13,62 @@ html, body {
 }
 
 /*Nav bar*/
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 1.5vmax;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 70%; 
+    height: 100vh;
+    background-color: #0A4452;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 5vmax;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.active {
+    right: 0; 
+}
+
+.sidebar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #c0c0c0;
+    color: #000000;
+}
+
+/* Styly pro křížek */
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #0A4452; /* Změna barvy při najetí myší */
+}
+
 
 nav {
     background-color: #0A4452;
@@ -24,7 +81,7 @@ nav {
     overflow: visible;
 }
 
-.navigation {
+#navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,6 +215,7 @@ nav a:hover {
 .dropdown-menu a:hover {
     background-color: #f1f1f1; 
 }
+
 
 /* Form section */
 
@@ -323,4 +381,20 @@ footer button {
 #button-footer {
     text-decoration: none;
     color: #0A4452;
+}
+
+@media screen and (max-width: 480px) {
+    .left-nav img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+
+    .right-nav {
+        display: none; 
+    }
 }

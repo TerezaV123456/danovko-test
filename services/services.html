@@ -13,8 +13,8 @@
     </head>
     <body>
         
-        <!--Navigation-->
-        <nav class="navigation">
+         <!--Navigation-->
+         <nav id="navigation">
             <div class="left-nav">
                 <img src="/images/logo.png" alt="nav-logo">
             </div>
@@ -32,7 +32,19 @@
                 <a id="kontakt" href="/contacts/contacts.html">Kontakt</a>
                 <a id="poptavka" href="/questions/questions.html">Poptávka</a>
             </div>
+            <div class="hamburger" onclick="toggleSidebar()">&#9776;</div> <!-- Hamburger menu -->
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="sidebar" id="sidebar">
+            <div class="close-btn" onclick="toggleSidebar()">&#10005;</div> <!-- Křížek pro zavření -->
+            <a href="/index.html" onclick="toggleSidebar()">DOMŮ</a>
+            <a href="/about-us/about-us.html" onclick="toggleSidebar()">O NÁS</a>
+            <a href="/services/services.html" onclick="toggleSidebar()">SLUŽBY</a>
+            <a href="/contacts/contacts.html" onclick="toggleSidebar()">KONTAKT</a>
+            <a href="/questions/questions.html" onclick="toggleSidebar()">POPTÁVKA</a>
+        </div>
+
 
         <!--Nezisková organizace sekce-->
         <section class="neziskovka">
@@ -168,5 +180,7 @@
                 <button type="button"><a id="button-footer" href="/questions/questions.html">Chci poradit!</a></button>
             </div>
         </footer>
+
+        <script src="/services/services.js"></script>
     </body>
 </html>
